@@ -1,11 +1,12 @@
 package ru.netology.repository;
+
 import ru.netology.model.Post;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-public class PostRepositoryStubImpl extends PostRepository {
+public class PostRepositoryStubImpl implements PostRepository {
     public List<Post> all() {
         return Collections.emptyList();
     }
