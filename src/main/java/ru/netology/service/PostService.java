@@ -7,6 +7,7 @@ import ru.netology.repository.PostRepository;
 import java.util.List;
 
 public class PostService {
+    // сервис завязан на интерфейс, а не на конкретную реализацию
     private final PostRepository repository;
 
     public PostService(PostRepository repository) {
@@ -14,7 +15,7 @@ public class PostService {
     }
 
     public List<Post> all() {
-        return (List<Post>) repository.all();
+        return repository.all();
     }
 
     public Post getById(long id) {
